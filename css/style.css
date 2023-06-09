@@ -1,0 +1,284 @@
+*{
+    margin: 0px;
+}
+
+.nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.nav ul{
+    display: flex;
+    padding: 30px;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 21px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: red;
+   
+}
+
+
+.home{
+    background: url(../images/bg3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    background-position-x: left;
+    color: white;
+    display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 40%;
+}
+
+@keyframes homeanimation{
+    from{
+        transform: translateY(200px);
+        color: black;
+    }  
+    to{
+        transform: translateY(0px);
+        color: white;
+    }
+}
+
+.homeText{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    animation:homeanimation 2s ease 1s 1 normal,movieImgAnimation3 2s ease-in-out 1s infinite alternate;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fd2f10;
+}
+
+@keyframes movieImgAnimation3{
+    100%{
+        transform: translateY(12px);
+    }
+}
+
+@keyframes movieImgAnimation{
+    100%{
+        transform: translateY(7px);
+    }
+}
+@keyframes movieImgAnimation2{
+    100%{
+        transform: translateY(-7px);
+    }
+}
+
+
+
+
+
+
+
+.movieImg{
+    margin: 10px 10px;
+    width: 300px;
+    border: 10px solid black;
+}
+
+.begins{
+    animation: movieImgAnimation 1s ease-in-out 1s infinite alternate;
+}
+
+.darkKnight{
+    animation: movieImgAnimation2 1s ease-in-out 1s infinite alternate;
+
+}
+
+.rises{
+    animation: movieImgAnimation 1s ease-in-out 1s infinite alternate;
+
+}
+
+.theBatman{
+    animation: movieImgAnimation2 1s ease-in-out 1s infinite alternate;
+
+}
+
+.begins{
+    margin-top: 34px;
+}
+
+.BatmobileSection{
+    height: 700px;
+    background-color: #fd2f10;;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: 40%;
+}
+
+.Contact{
+    height: 500px;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-input{
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+::placeholder{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@keyframes contactbtn{
+    100%{
+          background-color: #fd2f10;
+          color: black;
+    }
+}
+
+.btn{
+    width: 27%;
+    height:31px ;
+    padding-top: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: solid red 2px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease 0s;
+    margin-left: 143px;
+    animation: contactbtn 3s ease-in-out infinite alternate; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: #fd2f10;
+    color: black;
+}
+
+
+
+
+.btn:hover{
+    transform: translateY(-10px);
+}
+.text-centre{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 54.2px;
+    padding-top: 30px;
+}
+
+.batmobileImage{
+    border: 10px solid black;
+}
+
+.form-input{
+    background-color: #fd2f10;
+    color: black;
+    border-radius: 10px;
+    font-weight: 50%;
+}
+
+.batmobileHeading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+@keyframes contactbtn{
+    from{
+          background-color: white;
+    }
+    to{
+           background-color: #fd2f10;
+    }
+}
+
+@keyframes movieImgAnimation2{
+    100%{
+        transform: translateY(-4px);
+    }
+}
+.batMobileDesc{
+    animation:movieImgAnimation2 2s ease-in-out 1s infinite alternate ;
+     color: white;
+     height: 59.8px;
+     margin-top: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+@keyframes heading{
+    100%{
+        color: white;
+        background-color: black;
+    }
+    0%{
+        color: red;
+    }
+  
+}
+.batmobileHeading{
+    animation: heading 3s ease-in-out infinite alternate;
+    height: 16px;
+    width: 100%;
+    height: 33px;
+    padding-top: 16px;
+    background-color: black;
+}
+
+.moviesHeading{
+    animation: heading 3s ease-in-out infinite alternate;
+    height: 33px;
+    padding-top: 16px;
+    margin-top: 22px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.text-centre{
+    animation: heading 2s ease-in-out infinite alternate;
+}
